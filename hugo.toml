@@ -1,0 +1,60 @@
+baseurl = "https://aipod.nz/"
+languageCode = "en-us"
+title = "AI Pod"
+theme = "castanet"
+pagination.pagerSize = "9"
+buildFuture = true
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+
+[permalinks]
+  about = "/:contentbasename/"
+  episode = "/:contentbasename/"
+
+[[Menu.Main]]
+    name = "About"
+    identifier = "about"
+    url = "/about"
+
+[[Menu.Main]]
+    name = "Host"
+    identifier = "host"
+    url = "/host"
+
+[params]
+mainSections = ["episode"]
+episode_number_style = "brackets"
+episode_number_prefix = "AIP"
+site_theme = "blue"
+site_layout = "row"
+show_next_upcoming = "true"
+enable_jumbo = "true"
+disable_title_caps = "true"
+copyright_notice = "Copyright 2026 AI Pod"
+description = "AI Pod takes large hundred+ page reports published by the government and turns them into AI generated podcasts."
+media_prefix = "https://cdn.aipod.nz/audio/"
+
+  [params.feed]
+    copyright = "Copyright 2026 AI Pod"
+    itunes_subtitle = "Government reports, transformed by AI"
+    itunes_author = "AI Pod"
+    itunes_summary = "AI Pod takes large hundred+ page reports published by the government and turns them into AI generated podcasts. We digest complex policy documents and turn them into engaging, accessible audio content."
+    itunes_owner_name = "Gardner Bickford"
+    itunes_owner_email = "gardner@quickture.com"
+    itunes_image = "https://cdn.aipod.nz/img/podcast-art.jpg"
+    itunes_top_category = "Government"
+    itunes_first_sub_category = "Politics"
+    language = "en-us"
+
+  [params.authors]
+    [params.authors.AI]
+      name = "AI Host"
+      thumbnail = "img/host/ai.png"
+      bio = "Your AI-powered host, transforming complex government reports into engaging podcast episodes."
+
+  [params.social]
+    github = "aipod-nz"
+    twitter = "aipod_nz"

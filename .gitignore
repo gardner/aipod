@@ -1,0 +1,20 @@
+# Hugo build output
+public/
+resources/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Node modules (if any JS tooling)
+node_modules/
+
+# Cloudflare
+.wrangler/

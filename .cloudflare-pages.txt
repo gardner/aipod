@@ -1,0 +1,15 @@
+# Cloudflare Pages Build Configuration
+
+AIDEV-NOTE: This file contains build instructions for Cloudflare Pages.
+The build.sh script handles base URL configuration for production vs preview.
+
+Build command: ./build.sh
+Build output directory: public
+HUGO_VERSION environment variable must be set in Pages settings (recommend 0.156.0)
+
+For Cloudflare Pages setup:
+1. Connect to your Git repository
+2. Set production branch: main
+3. Build command: ./build.sh
+4. Build output directory: public
+5. Add environment variable: HUGO_VERSION=0.156.0 (for both Production and Preview)
